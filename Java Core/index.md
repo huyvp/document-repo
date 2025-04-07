@@ -1,12 +1,11 @@
 > 💡 This template explains our QA process for shipping bug-free software.
 
----
-
 ## **1. Kiểu dữ liệu**
 
 ### Primitive data
 
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/977c89a6-d1d1-4d17-80a5-f6c00e1e98f7/a3047f5a-308b-4e1a-b787-db2d2e5f3deb/image.png)
+![image](https://github.com/user-attachments/assets/e76925bc-9f3a-4af6-86f5-6f43fead5b42)
+
 
 ### Reference data
 
@@ -14,21 +13,18 @@
 
 Ví dụ: String, bản chất String là một mảng lưu nhiều kí tự (char). Việc khai báo **String name = ‘KTEAM’** có thể diễn đạt như sau:
 
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/977c89a6-d1d1-4d17-80a5-f6c00e1e98f7/a1fd8861-c084-4c27-b7de-9a5b96c99f15/image.png)
+![image2](https://github.com/user-attachments/assets/4546447f-b1c9-4022-9da7-64de912a7e64)
 
----
 
 ## **2. Quản Lý Bộ Nhớ**
 
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/977c89a6-d1d1-4d17-80a5-f6c00e1e98f7/2135a8c6-b664-4c19-97bd-33036739baaa/image.png)
+![image3](https://github.com/user-attachments/assets/cdbd2a5b-30f2-4d97-88e3-108d4dbd5e6c)
 
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/977c89a6-d1d1-4d17-80a5-f6c00e1e98f7/8f0dffd6-c9bb-43f5-a4f5-cc132a9f6da6/image.png)
+![image4](https://github.com/user-attachments/assets/39e8b70d-3563-4439-ae07-e4f7c7fcee09)
 
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/977c89a6-d1d1-4d17-80a5-f6c00e1e98f7/6336f5ba-6123-42d0-92f5-35055f65f2f0/image.png)
+![image5](https://github.com/user-attachments/assets/99434ce3-0bda-48d8-9c89-4d0813c62185)
 
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/977c89a6-d1d1-4d17-80a5-f6c00e1e98f7/ddcb0d8e-fa76-4ebe-b7fe-ec85efb9ee96/image.png)
-
----
+![image6](https://github.com/user-attachments/assets/3edce364-3dff-47e5-8865-7e92115f4e4c)
 
 ## **3. Các tính chất cơ bản**
 
@@ -42,8 +38,6 @@ Ví dụ: String, bản chất String là một mảng lưu nhiều kí tự (ch
 - **Tính trừu tượng (Abstraction)**:
   - Chỉ tiết lộ những thành phần thiết yếu với người dùng, ẩn dấu đi những thông tin quan trọng và không cần thiết.
   - Thể hiện qua abstract, interface.
-
----
 
 ## **4. Abstract class vs Interface**
 
@@ -71,8 +65,6 @@ Ví dụ: String, bản chất String là một mảng lưu nhiều kí tự (ch
 | Mục đích        | Lớp cha chung cho các nhóm lớp liên quan      | Định ra hành động có thể dùng chung cho các lớp |
 | Tốc độ          | Nhanh                                         | Chậm vì phải điều hướng                         |
 
----
-
 ## **5. Public, private, protected**
 
 | **Modifier** | **Class** | **Package** | **Subclasses** | **World** |
@@ -88,11 +80,10 @@ Ví dụ: String, bản chất String là một mảng lưu nhiều kí tự (ch
 - `(+)` Public
 - `(#)` Protected
 
----
-
 ## **6. Java Collections**
 
-![collections-hierarchy](http://www.startertutorials.com/corejava/wp-content/uploads/2018/02/collections-hierarchy.png)
+![image7](https://github.com/user-attachments/assets/9d4d1b2a-8395-4453-a848-0e6718ace962)
+
 
 - **Set**: không có giá trị trùng lặp >< List.
 - Tập trung sử dụng `ArrayList`, `TreeSet` và `Stack`.
@@ -108,8 +99,6 @@ Ví dụ: String, bản chất String là một mảng lưu nhiều kí tự (ch
 | `remove(o)`   | Xóa phần tử              |
 | `size()`      | Trả về số lượng phần tử  |
 | `contains(o)` | Kiểm tra tồn tại phần tử |
-
----
 
 ### **Stream API**
 
