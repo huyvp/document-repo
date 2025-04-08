@@ -69,8 +69,8 @@ Container ở trạng thái running khi nó vẫn còn thực thi một tác v�
 
 Để thực thi một tác vụ, command hay script ta có thể sử dụng câu lệnh **CMD** hoặc **Entrypoint** trong Dockerfile
 
-- **CMD** Nhận tham số khi chạy docker run để overide command được chỉ định trong CMD
-- **Entrypoint** Nhận tham số khi chạy docker run để làm tham số cho Entrypoint
+- **CMD** Nhận tham số khi chạy docker run - để overide command được chỉ định trong CMD
+- **Entrypoint** Nhận tham số khi chạy docker run - để làm tham số cho Entrypoint (chạy ngay khi run image - default process). Nó sẽ nối tiếp vào câu lệnh trong Entrypoint
 
 ![Untitled](https://github.com/user-attachments/assets/2b0bcd2f-0325-4826-b823-2f3f5a2d39fa)
 
