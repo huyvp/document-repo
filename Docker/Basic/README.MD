@@ -72,7 +72,7 @@ Container ở trạng thái running khi nó vẫn còn thực thi một tác v�
 - **CMD** Nhận tham số khi chạy docker run để overide command được chỉ định trong CMD
 - **Entrypoint** Nhận tham số khi chạy docker run để làm tham số cho Entrypoint
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/977c89a6-d1d1-4d17-80a5-f6c00e1e98f7/71c27433-c9dd-47c8-8f87-2bfa63ab12ed/Untitled.png)
+![Untitled](https://github.com/user-attachments/assets/2b0bcd2f-0325-4826-b823-2f3f5a2d39fa)
 
 - CMD có thể sử dụng theo các format sau trong Dockerfile
   CMD executable, param1, param2 CMD sleep 5
@@ -150,7 +150,7 @@ docker -H=remote-docker-engine:2375 (docker -H=10.123.2.1:2375 run nginx)
 
 - Công cụ cho phép triển khai đồng thời nhiều containers
 - Sử dụng file dạng yaml để cấu hình
-  ![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/977c89a6-d1d1-4d17-80a5-f6c00e1e98f7/e21bcaa9-1801-4e0b-94ca-b014157d3a38/Untitled.png)
+  ![Untitled2](https://github.com/user-attachments/assets/a32688e5-9538-4310-97b3-57f31c561bf0)
 
 ### Docker Swarm
 
