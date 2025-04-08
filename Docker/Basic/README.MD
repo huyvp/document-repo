@@ -27,7 +27,7 @@
 
 ## **Container lifecycle**
 
-![Capture.PNG](https://prod-files-secure.s3.us-west-2.amazonaws.com/977c89a6-d1d1-4d17-80a5-f6c00e1e98f7/77b0b618-3fbc-46d6-82b5-e0defaf0ee3c/Capture.png)
+![Capture PNG](https://github.com/user-attachments/assets/c965fe0b-efad-4967-af33-5c1372e7c53c)
 
 - docker pull: Download một docker image từ docker hub
 - docker create: Tạo container từ docker image
