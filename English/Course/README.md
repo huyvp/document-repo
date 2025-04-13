@@ -76,3 +76,109 @@ Một điểm rất hay ho ở trang này đó là ở phần dưới của mỗ
 48. To turn a blind eye: Nhắm mắt cho qua
 49. A dime a dozen: Rẻ như cho
 50. The ball is in your court: Quyết định nằm ở bạn
+
+✨ Tổng Hợp 50 CỤM ĐỘNG TỪ Thông Dụng Nhất Dân Học Tiếng Anh Phải Biết 🫧
+
+1. Get across: truyền đạt được
+2. Get along: hòa thuận, hòa hợp
+3. Get away: rời khỏi, đi xa
+4. Get by: xoay sở sống/làm gì
+5. Get over: khỏi ốm, khắc phục được
+6. Look ahead: tính toán trước
+7. Look back: ngẫm lại chuyện đã qua
+8. Look for: tìm kiếm cái gì
+9. Look forward to: mong chờ điều gì
+10. Look at: nhìn vào cái gì
+11. Take up: bắt đầu một cái gì mới
+12. Take after: giống ai đó
+13. Take care of: chăm sóc ai/cái gì
+14. Take off: cất cánh (máy bay)
+15. Take down: ghi chép lại
+16. Go after: đuổi theo, đi theo
+17. Go along: đồng ý
+18. Go away: đi khỏi, rời khỏi
+19. Go by: đi qua, trôi qua
+20. Go down: giảm xuống, hạ xuống
+21. Bring about: dẫn đến, gây ra
+22. Bring along: mang theo
+23. Bring back: mang trả lại, gợi lại
+24. Bring out: làm nổi bật
+25. Bring over: thuyết phục
+26. Put aside: để dành, dành dụm (tiền)
+27. Put forward: đề nghị, gợi ý
+28. Put down: đặt xuống
+29. Put off: hoãn lại
+30. Put on: mặc vào
+31. Give way: tránh đường
+32. Give priority: đặt ưu tiên
+33. Give permission: cho phép
+34. Give notice: thông báo
+35. Give a hand: giúp đỡ
+36. Come about: xảy ra
+37. Come prepared: đến với sự chuẩn bị
+38. Come across: tình cờ gặp
+39. Come after: theo sau, kế nghiệp
+40. Come apart: tách khỏi, rời ra
+41. Make trouble: gây rắc rối
+42. Make time: sắp xếp thời gian
+43. Make sense: có nghĩa (có thể hiểu được)
+44. Make money: kiếm tiền
+45. Make friends: kết bạn
+46. Run about: bận rộn làm nhiều việc
+47. Run across: chạy qua
+48. Run after: chạy theo, cố gắng đạt được
+49. Run along: rời khỏi, đi khỏi
+50. Run away: chạy trốn, bỏ trốn
+
+✨ Tổng Hợp 50 CỤM ĐỘNG TỪ Thông Dụng Nhất Dân Học Tiếng Anh Phải Biết 🫧
+
+51. Get across: truyền đạt được
+52. Get along: hòa thuận, hòa hợp
+53. Get away: rời khỏi, đi xa
+54. Get by: xoay sở sống/làm gì
+55. Get over: khỏi ốm, khắc phục được
+56. Look ahead: tính toán trước
+57. Look back: ngẫm lại chuyện đã qua
+58. Look for: tìm kiếm cái gì
+59. Look forward to: mong chờ điều gì
+60. Look at: nhìn vào cái gì
+61. Take up: bắt đầu một cái gì mới
+62. Take after: giống ai đó
+63. Take care of: chăm sóc ai/cái gì
+64. Take off: cất cánh (máy bay)
+65. Take down: ghi chép lại
+66. Go after: đuổi theo, đi theo
+67. Go along: đồng ý
+68. Go away: đi khỏi, rời khỏi
+69. Go by: đi qua, trôi qua
+70. Go down: giảm xuống, hạ xuống
+71. Bring about: dẫn đến, gây ra
+72. Bring along: mang theo
+73. Bring back: mang trả lại, gợi lại
+74. Bring out: làm nổi bật
+75. Bring over: thuyết phục
+76. Put aside: để dành, dành dụm (tiền)
+77. Put forward: đề nghị, gợi ý
+78. Put down: đặt xuống
+79. Put off: hoãn lại
+80. Put on: mặc vào
+81. Give way: tránh đường
+82. Give priority: đặt ưu tiên
+83. Give permission: cho phép
+84. Give notice: thông báo
+85. Give a hand: giúp đỡ
+86. Come about: xảy ra
+87. Come prepared: đến với sự chuẩn bị
+88. Come across: tình cờ gặp
+89. Come after: theo sau, kế nghiệp
+90. Come apart: tách khỏi, rời ra
+91. Make trouble: gây rắc rối
+92. Make time: sắp xếp thời gian
+93. Make sense: có nghĩa (có thể hiểu được)
+94. Make money: kiếm tiền
+95. Make friends: kết bạn
+96. Run about: bận rộn làm nhiều việc
+97. Run across: chạy qua
+98. Run after: chạy theo, cố gắng đạt được
+99. Run along: rời khỏi, đi khỏi
+100.  Run away: chạy trốn, bỏ trốn
