@@ -1,4 +1,5 @@
 ## CORS
+![492041668_2718714748312377_7816653042121289799_n](https://github.com/user-attachments/assets/ecf03c9f-e4fa-4217-ba37-c789507d705d)
 
 Ae lập trình web chắc không ít lần đập bàn phím vì cái lỗi đỏ lòm "CORS error" trên console đúng không? 😅 Hồi mới làm web, mình cũng hoang mang, không hiểu sao trang A lại không gọi được API từ trang B, rồi thì SOP, CORS, CSRF nó là cái gì mà rối rắm vậy.  
 Mình muốn chia sẻ lại góc nhìn dễ hiểu nhất, hy vọng ae nào đang bắt đầu còn mơ hồ sẽ thấy sáng tỏ hơn nhé!
