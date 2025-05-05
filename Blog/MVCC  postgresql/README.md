@@ -72,12 +72,14 @@ Kiểm tra lại bản ghi vừa insert
 ```sql
     SELECT xmin, xmax, ctid, * FROM accounts;
 ```
+![1](https://github.com/user-attachments/assets/739406ea-ce90-4f96-8508-af5fc8a36a53)
 
 Kết quả: có thể thấy rằng transaction insert vừa rồi là 842, và tuple có ctid (địa chỉ trên heap) là (0,1) Thử update bản ghi
 
 ```sql
     UPDATE accounts SET balance = 120 WHERE id = 1;
 ```
+![2](https://github.com/user-attachments/assets/104c5794-cf3e-44f1-8739-f85a61f6e011)
 
 Kết quả: có thể thấy rằng xmin bản ghi mới là 844, tức transaction 844 đã tạo ra 1 tuple mới. Để kiểm tra lại các dead tuple, cần sử dụng extension pageinspect
 
@@ -87,6 +89,7 @@ Kết quả: có thể thấy rằng xmin bản ghi mới là 844, tức transac
     SELECT t_xmin::text AS xmin, t_xmax::text AS xmax, t_ctid::text AS ctid
     FROM heap_page_items(get_raw_page('accounts', 0));
 ```
+![3](https://github.com/user-attachments/assets/09517ab6-0281-4e58-8ab4-8dd1eaa04ea5)
 
 Có thể thấy rằng lần insert đầu tiên có xmin là 842, sau khi update 2 lần thì tuple mới nhất có xmin là 844 và xmax là 0 (live tuple). Đến đây thì mình nhận ra 1 điều rất thú vị đó là mặc dù lần insert đầu tiên có ctid là (0,1) nhưng lần sau nó đã chuyển thành (0, 2), và 2 tuple sau lại có cùng ctid (0, 3). Mình thử tìm hiểu thì thấy rằng postgres tận dụng vùng nhớ để cùng lưu 2 tuple dead và live có thể dùng chung.
 
