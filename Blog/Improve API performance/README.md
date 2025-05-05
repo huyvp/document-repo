@@ -1,4 +1,5 @@
 ## How to Improve API Performance
+![1746072062866](https://github.com/user-attachments/assets/31c1ccc1-bd2b-4288-bc39-cbd8b8d9d106)
 
 ### 1. Pagination
 
