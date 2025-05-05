@@ -2,7 +2,8 @@
 
 Levels.fyi, một trang web nghề nghiệp dành cho các chuyên gia, đã đạt được hàng triệu người dùng bằng cách sử dụng một giải pháp Database độc đáo: Google Sheets! Trong những năm đầu, mọi dữ liệu lương – hơn 100k bản ghi – được nhồi vào một file JSON duy nhất, tải thẳng xuống trình duyệt.  
 Không server phức tạp, không tối ưu hóa sớm, chỉ có Google Sheets, điều này giúp họ tập trung phát triển sản phẩm, tiết kiệm chi phí hạ tầng, và dễ dàng vận hành mà không cần bảo trì server. Sự đơn giản tột độ đã giúp họ scale lên 2 triệu user/tháng.  
-Vậy họ đã làm như nào??? 🤔🤔🤔
+Vậy họ đã làm như nào??? 🤔🤔🤔  
+![481184662_4249055748752839_8634872733091717446_n](https://github.com/user-attachments/assets/6b89e92b-2221-4657-9286-4697303d1741)
 
 - Thành phần hệ thống:
   Hệ thống của Levels.fyi sử dụng:
