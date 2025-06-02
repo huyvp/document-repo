@@ -1,3 +1,5 @@
+![image](https://github.com/user-attachments/assets/3cd73913-4483-4ccc-8fcf-517ec37395b8)
+
 What is SSO (Single Sign-On)?
 
 Single Sign-On (SSO) is an authentication scheme that allows users to access multiple systems with just one set of login credentials.
