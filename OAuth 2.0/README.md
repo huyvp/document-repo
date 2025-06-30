@@ -1,9 +1,5 @@
 # TÀI LIỆU HỌC TẬP: LỘ TRÌNH OAUTH2 VỚI SPRING BOOT 3
 
-**Nguồn:** Video "Lộ trình học OAuth2 với Spring boot 3" từ kênh YouTube Devteria.
-
----
-
 ## Mục lục
 
 1. [Overview of OAuth2](./1.Overview%20of%20OAuth2/README.md)
@@ -70,12 +66,3 @@ Series này được cấu trúc thành một lộ trình học từng bước, 
 ### 6. Tự xây dựng một OAuth2 Server của riêng mình:
 
 - Là một bước nâng cao, series sẽ chứng minh rằng việc **tự xây dựng một OAuth2 server của riêng bạn là "không phải là một điều quá xa xôi" và "hoàn toàn có thể làm được"** dựa trên Spring Framework và Spring Security.
-
-## III. THÔNG TIN BỔ SUNG VÀ HỖ TRỢ CỘNG ĐỒNG
-
-- Series này được xây dựng như một **lộ trình học để người xem có thể tự tìm hiểu và tham khảo**.
-- Để tri ân các hội viên của kênh "Devteria", các video của khóa học sẽ **được đăng tải trước tiên trên kênh dành riêng cho hội viên**.
-- Tuy nhiên, **khi toàn bộ series đã hoàn thành, tất cả các video sẽ được công khai** cho tất cả mọi người cùng theo dõi.
-- Việc trở thành hội viên là một **sự hỗ trợ rất lớn cho người hướng dẫn**, giúp duy trì và phát triển kênh ngày càng mạnh mẽ. Sự đóng góp này cũng "**góp cho cộng đồng**" bằng cách đảm bảo người hướng dẫn có thể dành nhiều thời gian và công sức hơn để tạo ra các video chất lượng cao. Bạn có thể tham gia hội viên bằng cách nhấn nút "**Join**" và đăng ký ở các mức khác nhau.
-
----
