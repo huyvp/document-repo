@@ -20,6 +20,8 @@ OAuth2 được giới thiệu là một trong những từ khóa "**đang rất
 - **Thách thức và sự tò mò:** Mặc dù phổ biến, OAuth2 cũng được nhận định là "**khá là khó hiểu**", điều này lại "**kích thích cái sự tò mò của các bạn rất nhiều**".
 - **Mục tiêu của series:** Series video này không chỉ làm rõ chính xác OAuth2 là gì, tại sao nó được sử dụng phổ biến, và cách vận dụng nó vào các ứng dụng. Trọng tâm là **tiếp tục phát triển "identity service"** mà người hướng dẫn đã cùng xây dựng trong khóa học Spring Boot cơ bản trước đó, để **tích hợp nó với OAuth2**.
 
+  ![image](https://github.com/user-attachments/assets/84055844-8199-47cc-a884-e965cdb486e7)
+
 ## II. LỘ TRÌNH HỌC CHI TIẾT TRONG SERIES
 
 Series này được cấu trúc thành một lộ trình học từng bước, từ các khái niệm cơ bản đến việc triển khai nâng cao.
