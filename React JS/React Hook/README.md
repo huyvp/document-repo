@@ -77,101 +77,90 @@
 
 # Hooks
 
-## 1. useState():
+### 1. useState():
+
+- Component sẽ được re-render sau khi `setState`
+- Initial state chỉ sử dụng cho lần đầu
+- Có thể Initial state với callBack
+
+```jsx
+// State với callback
+// Đặt callback là hàm tính tổng làm init tránh việc sẽ tính lại biến total nhiều lần
+import { useState } from "react";
+const orders = [100, 200, 300];
+function Component() {
+  const [counter, setCounter] = useState(() => {
+    const total = orders.reduce((total, cur) => total + cur);
+    return total;
+  });
+
+  const handleIncrease = () => {
+    setCounter((preState) => preState + 1);
+  };
+
+  return (
+    <div className="App" style={{ padding: 30 }}>
+      <h1>{counter}</h1>
+      <button onClick={handleIncrease}>Increase</button>
+    </div>
+  );
+}
+export default Component;
+```
+
+- Two-way binding
 
 ```jsx
 import { useState } from "react";
 
-function Demo() {
-  const courses = [
-    {
-      id: 1,
-      name: "html",
-    },
-    {
-      id: 2,
-      name: "Java",
-    },
-    {
-      id: 3,
-      name: "Javascript",
-    },
-  ];
-
-  const handleClick = (value) => {
-    const isChecked = checkbox.includes(value);
-    if (isChecked) return setCheckbox(checkbox.filter((i) => i !== value));
-    else return setCheckbox([...checkbox, value]);
+function Component() {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const handleSubmit = () => {
+    // call api
+    console.log({
+      name,
+      email,
+    });
   };
-  const [state, setState] = useState("");
-  const [radio, setRadio] = useState();
-  const [checkbox, setCheckbox] = useState([]);
-
-  console.log(checkbox);
-
   return (
-    <div className="Demo" style={{ padding: 30 }}>
-      <h2>Two-way bilding with input</h2>
-      <input value={state} onChange={(e) => setState(e.target.value)} />
-      <button onClick={() => setState("Changed")}>Submit</button>
-
-      <h2>Two-way bilding with radio</h2>
-      {courses.map((course) => {
-        return (
-          <div key={course.id}>
-            <input
-              type="radio"
-              onChange={() => setRadio(course.id)}
-              checked={radio === course.id}
-            ></input>
-            {course.name}
-          </div>
-        );
-      })}
-      <h2>Two-way bilding with checkbox</h2>
-      {courses.map((course) => {
-        return (
-          <div key={course.id}>
-            <input
-              type="checkbox"
-              onChange={() => handleClick(course.id)}
-              checked={checkbox.includes(course.id)}
-            ></input>
-            {course.name}
-          </div>
-        );
-      })}
+    <div className="App" style={{ padding: 30 }}>
+      <input value={name} onChange={(e) => e.target.value} />
+      <input value={email} onChange={(e) => e.target.value} />
+      <button onClick={handleSubmit}>Login</button>
     </div>
   );
 }
-
-export default Demo;
+export default Component;
 ```
 
-## 2. useEffect
+### 2. useEffect
 
 - Dùng call api, update DOM, listen DOM event, clear timer,...
-- **useEffect(callback):**
+- Gọi callback mỗi khi component được mounted
+- Khái niệm `Mounted/Unmounted`: Khi được thẻ được tạo ra và gắn vào dom thì được coi là mounted và ngược lại
+
+- `useEffect(callback):`
   - Gọi sau mỗi lần component re-render
   - Gọi callback một lần sau khi component mounted (thêm vào DOM)
-- **useEffect(callback, []):**
-  - chỉ gọi một lần sau khi component mounted
-- **useEffect(callback, [deps])**
+- `useEffect(callback, []):`
+  - Chỉ gọi một lần sau khi component mounted (thêm vào DOM)
+- `useEffect(callback, [deps])`
   - deps là 1 biến (lưu vào useState)
   - Gọi lại mỗi khi deps thay đổi
-- **Clean up function**
+- `Clean up function`
   - Luôn return một listener sau mỗi useEffect để tránh memory leak return () => {}
   - Luôn được gọi sau component unmounted
   - Luôn được gọi trước callback khi lần 2 re-render
 
-## 3. useLayoutEffect
+### 3. useLayoutEffect
 
 - Gần giống useEffect
 - Khác biệt: useEffect sẽ chạy cleanUp và callback trước re-render còn useLayoutEffect thì ngược lại:
   - useEffect: update state => update dom => render-ui => cleanUp => callback
   - useLayoutEffect: update state => update dom => cleanUp => callback => render-ui
 
-## 3. useRef
+### 3. useRef
 
 - Khi component re-render thì biến dùng chung cho hàm => undifined => dùng useRef để chuyển biến ra ngoài component
 - **const ref = useRef(initValue)** sẽ return obj
