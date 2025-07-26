@@ -83,56 +83,56 @@
 - Initial state chỉ sử dụng cho lần đầu
 - Có thể Initial state với callBack
 
-```jsx
-// State với callback
-// Đặt callback là hàm tính tổng làm init tránh việc sẽ tính lại biến total nhiều lần
-import { useState } from "react";
-const orders = [100, 200, 300];
-function Component() {
-  const [counter, setCounter] = useState(() => {
-    const total = orders.reduce((total, cur) => total + cur);
-    return total;
-  });
+  ```jsx
+  // State với callback
+  // Đặt callback là hàm tính tổng làm init tránh việc sẽ tính lại biến total nhiều lần
+  import { useState } from "react";
+  const orders = [100, 200, 300];
+  function Component() {
+    const [counter, setCounter] = useState(() => {
+      const total = orders.reduce((total, cur) => total + cur);
+      return total;
+    });
 
-  const handleIncrease = () => {
-    setCounter((preState) => preState + 1);
-  };
+    const handleIncrease = () => {
+      setCounter((preState) => preState + 1);
+    };
 
-  return (
-    <div className="App" style={{ padding: 30 }}>
-      <h1>{counter}</h1>
-      <button onClick={handleIncrease}>Increase</button>
-    </div>
-  );
-}
-export default Component;
-```
+    return (
+      <div className="App" style={{ padding: 30 }}>
+        <h1>{counter}</h1>
+        <button onClick={handleIncrease}>Increase</button>
+      </div>
+    );
+  }
+  export default Component;
+  ```
 
 - Two-way binding
 
-```jsx
-import { useState } from "react";
+  ```jsx
+  import { useState } from "react";
 
-function Component() {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const handleSubmit = () => {
-    // call api
-    console.log({
-      name,
-      email,
-    });
-  };
-  return (
-    <div className="App" style={{ padding: 30 }}>
-      <input value={name} onChange={(e) => e.target.value} />
-      <input value={email} onChange={(e) => e.target.value} />
-      <button onClick={handleSubmit}>Login</button>
-    </div>
-  );
-}
-export default Component;
-```
+  function Component() {
+    const [name, setName] = useState("");
+    const [email, setEmail] = useState("");
+    const handleSubmit = () => {
+      // call api
+      console.log({
+        name,
+        email,
+      });
+    };
+    return (
+      <div className="App" style={{ padding: 30 }}>
+        <input value={name} onChange={(e) => e.target.value} />
+        <input value={email} onChange={(e) => e.target.value} />
+        <button onClick={handleSubmit}>Login</button>
+      </div>
+    );
+  }
+  export default Component;
+  ```
 
 ### 2. useEffect
 
@@ -149,9 +149,68 @@ export default Component;
   - deps là 1 biến (lưu vào useState)
   - Gọi lại mỗi khi deps thay đổi
 - `Clean up function`
+
   - Luôn return một listener sau mỗi useEffect để tránh memory leak return () => {}
   - Luôn được gọi sau component unmounted
   - Luôn được gọi trước callback khi lần 2 re-render
+
+  ```jsx
+  // Ví dụ: Xóa dom event khi component unmount nhưng sự kiện vẫn còn gắn trong DOM. sử dụng cleanup func để xóa DOM event trước khi nó được unmounted
+
+  import { useEffect, useState } from "react";
+
+  function Component() {
+    const [showGoToTop, setShowGoToTop] = useState(false);
+    useEffect(() => {
+      const handleScroll = () => {
+        setShowGoToTop(window.scrollY >= 200);
+      };
+      window.addEventListener("scroll", handleScroll);
+      // Cleanup func
+      return () => {
+        window.removeEventListener("scroll", handleScroll);
+      };
+    }, []);
+    return <div className="App" style={{ padding: 30 }}></div>;
+  }
+  export default Component;
+  ```
+
+  ```jsx
+  // Ví dụ: Giải phóng bộ nhớ khi chọn ảnh lên trình duyệt. Khi chọn ảnh làm Avatar. Sẽ tạo ra link tạm(Không mất khi không đóng tab ứng dụng) nên gây rò rỉ bộ nhớ nếu chọn ảnh khác lần 2. nên cần clean link cũ trước khi file mới được chọn
+
+  import { useEffect, useState } from "react";
+
+  function Component() {
+    const [avatar, setAvatar] = useState();
+
+    const handleChangeAvt = (e) => {
+        const file = e.target.files[0];
+        file = URL.createObjectURL(file)
+        setAvatar(file);
+    };
+
+    useEffect(() => {
+      // Cleanup func
+      return () => {
+        avatar && URL.revokeObjectURL(avatar);
+      };
+    }, []);
+
+    return (
+      <div className="App" style={{ padding: 30 }}>
+        <input
+          type="file"
+          onChange={handleChangeAvt}
+        />
+        {avatar && (
+          <img src={avatar} alt="" width="80%"/>
+        )}
+    </div>;
+    )
+  }
+  export default Component;
+  ```
 
 ### 3. useLayoutEffect
 
@@ -160,21 +219,21 @@ export default Component;
   - useEffect: update state => update dom => render-ui => cleanUp => callback
   - useLayoutEffect: update state => update dom => cleanUp => callback => render-ui
 
-### 3. useRef
+### 4. useRef
 
 - Khi component re-render thì biến dùng chung cho hàm => undifined => dùng useRef để chuyển biến ra ngoài component
 - **const ref = useRef(initValue)** sẽ return obj
 - Lấy giá trị: **ref.current**
 
-## 4. useMemo
+### 5. useMemo
 
 - Giảm tính toán cần thiết nếu component re-render, useMemo(callback, [deps]), useMemo(callback, [])
 
-## 5. useCallback
+### 6. useCallback
 
 - Tương tự useRef nhưng dùng cho arrow function khi chuyền prop cho component con. Kết hợp với "memo".
 
-## 6. useReducer:
+### 7. useReducer:
 
 Thay thế cho useState nếu quá phức tạp.
 
@@ -185,7 +244,7 @@ Thay thế cho useState nếu quá phức tạp.
 4: dispatch
 ```
 
-## 7. useContext:
+### 8. useContext:
 
 - Tạo ra một context. Nếu bọc context cho component cha thì thằng con đều có thể sử dụng. Giảm thiểu chuyền props.
 
