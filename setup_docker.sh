@@ -14,6 +14,27 @@ curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash -
 # Cài Node.js 
 sudo apt install -y nodejs
 
+# Fix lỗi không thể điều chỉnh độ sáng:
+# Trên Dell G15 (máy có Intel iGPU + NVIDIA dGPU), nguyên nhân là Ubuntu chỉ nhận nvidia_wmi_ec_backlight, trong khi cần intel_backlight. 
+# Khi Ubuntu map sai thì phím Fn / thanh brightness hoạt động chập chờn.
+# Cách khắc phục ổn định nhất là ép Ubuntu dùng intel_backlight thay vì nvidia_wmi_ec_backlight qua GRUB.
+
+# Mở file cấu hình GRUB:
+sudo nano /etc/default/grub
+
+# Tìm dòng:
+GRUB_CMDLINE_LINUX_DEFAULT="quiet splash"
+
+# Thay bằng (ưu tiên Intel):
+
+GRUB_CMDLINE_LINUX_DEFAULT="quiet splash acpi_backlight=native"
+GRUB_CMDLINE_LINUX_DEFAULT="quiet splash acpi_backlight=native i915.force_probe=*"
+
+# Cập nhật GRUB và reboot:
+
+sudo update-grub
+sudo reboot
+
 docker volume create --name sonarqube_data
 docker volume create --name sonarqube_logs
 docker volume create --name sonarqube_extensions
