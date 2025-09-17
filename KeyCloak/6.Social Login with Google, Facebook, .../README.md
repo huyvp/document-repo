@@ -1,3 +1,0 @@
-# Social Login with Google, Facebook, ...
-
-Nội dung sẽ được bổ sung tại đây.
