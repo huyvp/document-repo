@@ -5,7 +5,7 @@ docker run --name postgresql -e POSTGRES_PASSWORD=hh1122334455 -e POSTGRES_USER=
 # neo4j
 docker run -d --name neo4j --publish=7687:7687 --publish=7474:7474 -e 'NEO4J_AUTH=neo4j/neo4j123456' neo4j:latest
 # redis
-docker run -d --name redis -p 6379:6379 redis redis-server --requirepass "TmGNTwGNqgexF9jE4rB8LDy3u3S3i41oHAzCaOvnb6Y="
+docker run -d --name redis -p 6380:6379 redis redis-server --requirepass "TmGNTwGNqgexF9jE4rB8LDy3u3S3i41oHAzCaOvnb6Y="
 # node
 docker run -d --rm --entrypoint sh node:22-alpine
 # keycloak
