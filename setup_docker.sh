@@ -8,6 +8,8 @@ docker run -d --name neo4j --publish=7687:7687 --publish=7474:7474 -e 'NEO4J_AUT
 docker run -d --name redis -p 6379:6379 redis redis-server --requirepass "TmGNTwGNqgexF9jE4rB8LDy3u3S3i41oHAzCaOvnb6Y="
 # node
 docker run -d --rm --entrypoint sh node:22-alpine
+# keycloak
+docker run -d --name keycloak -p 8180:8080 -e KEYCLOAK_ADMIN=admin -e KEYCLOAK_ADMIN_PASSWORD=admin quay.io/keycloak/keycloak:25.0.0 start-dev
 # mongodb
 docker run -d --name mongodb -p 27017:27017 -e MONGO_INITDB_ROOT_USERNAME=admin -e MONGO_INITDB_ROOT_PASSWORD=admin mongo:latest
 
