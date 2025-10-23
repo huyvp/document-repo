@@ -12,6 +12,8 @@ https://xuanthulab.net/git-va-github/ https://xuanthulab.net/git-va-github/
   git config user.email
   git config [user.name](http://user.name/)
   git config --list
+- Xem số lượng commit của mọi người
+  git shortlog -sn --no-merges 
 
 # Tạo local repository mới
 
@@ -73,3 +75,4 @@ https://xuanthulab.net/git-va-github/ https://xuanthulab.net/git-va-github/
 - git checkout -b <tên nhánh> : tạo branch + checkout sang branch đó
 - git merge <tên nhánh>: Hợp nhất code sang nhánh chính(đứng trên nhánh chính)
 - git branch -r: check xem có bao nhiêu nhánh trên remote repo
+
