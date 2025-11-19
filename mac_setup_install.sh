@@ -73,6 +73,12 @@ echo "=== INSTALL VISUAL STUDIO CODE ==="
 brew install --cask visual-studio-code
 
 # -------------------------
+# Azure Data Studio
+# -------------------------
+echo "=== INSTALL AZURE DATA STUDIO ==="
+brew install --cask azure-data-studio
+
+# -------------------------
 # Node.js LTS
 # -------------------------
 echo "=== INSTALL NODEJS (LTS) ==="
