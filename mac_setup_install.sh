@@ -85,6 +85,12 @@ echo "=== INSTALL NODEJS (LTS) ==="
 brew install node
 
 # -------------------------
+# Mongo compass LTS
+# -------------------------
+echo "=== INSTALL MONGO COMPASS (LTS) ==="
+brew install --cask mongodb-compass
+
+# -------------------------
 # Cleanup
 # -------------------------
 echo "=== CLEANUP BREW ==="
