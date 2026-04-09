@@ -91,6 +91,12 @@ echo "=== INSTALL MONGO COMPASS (LTS) ==="
 brew install --cask mongodb-compass
 
 # -------------------------
+# Dart
+# -------------------------
+echo "=== INSTALL DART (LTS) ==="
+brew install dart-sdk
+
+# -------------------------
 # Cleanup
 # -------------------------
 echo "=== CLEANUP BREW ==="
