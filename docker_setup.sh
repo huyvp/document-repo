@@ -3,7 +3,7 @@ docker run -e 'ACCEPT_EULA=Y' --name mssql -e 'SA_PASSWORD=mssq@12345' -p 1433:1
 # postgresql
 docker run --name postgresql -e POSTGRES_PASSWORD=hh1122334455 -e POSTGRES_USER=postgres -p 5432:5432 -d -v vpostgresql:/var/lib/postgresql/data postgres:16.2
 # redis
-docker run -d --name redis -p 6380:6379 redis redis-server --requirepass "TmGNTwGNqgexF9jE4rB8LDy3u3S3i41oHAzCaOvnb6Y="
+docker run -d --name redis -p 6379:6379 redis redis-server --requirepass "TmGNTwGNqgexF9jE4rB8LDy3u3S3i41oHAzCaOvnb6Y="
 # node
 docker run -d --rm --entrypoint sh node:22-alpine
 # keycloak
